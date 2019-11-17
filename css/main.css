@@ -201,12 +201,6 @@ textarea {
       justify-content: center;
       align-items: center;
     }
-    
-    .features .content-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-    }
 
     .features h2 {
       margin-bottom: 60px;
@@ -404,7 +398,7 @@ textarea {
   /* -------------- Base Header - Footer Styles -------------- */
   
   header {
-    padding: 25px;
+    padding: 25px 0;
   }
 
   header .content-wrapper {
@@ -457,17 +451,18 @@ textarea {
     margin: 0;
   }
 
-  /* Features */         /* --------> very different from solution code, which deals mostly with article instead. check with alex :) */
-
-  .features .features-items {
-    flex-basis: 70%;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  /* Features */
 
   .features article {
-    margin: 50px 0;
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
   }
 
   /* Reviews */
@@ -520,6 +515,64 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* -------------- Base Header - Footer Styles -------------- */
+
+  /* -------------- Desktop Styles - Homepage -------------- */
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 70%;
+  }
+
+  .features article {
+    flex-basis: calc(100%/3);
+  }
+
+  /* Reviews */
+  
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* -------------- Desktop Styles - About page -------------- */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+  }
+
+  .contact .content-wrapper h2 {
+    margin-bottom: 40px;
+  }
+
+  /* -------------- Desktop Styles - FAQ page -------------- */
+
+  .faq-content {
+    flex-basis: 45%;
+  }
 }
 
 /* ==========================================================================
