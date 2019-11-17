@@ -175,6 +175,12 @@ textarea {
 
   /* Hero Area */
 
+  .hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
   /* Aside */
 
    aside {
