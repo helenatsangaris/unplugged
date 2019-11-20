@@ -144,7 +144,15 @@ textarea {
     font-size: 0.875em;
     line-height: 1.285;
   }
-  
+
+  img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
   address {
     font-style: normal;
   }
@@ -176,6 +184,14 @@ textarea {
      flex-flow: row wrap;
      margin: 0;
      width: 100%;
+   }
+
+   header figure {
+     width: 60%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
    }
 
     .header-divider {
@@ -244,7 +260,8 @@ textarea {
   /* Hero Area */
 
   .hero-area {
-    background: url('../img/bridge.jpg');
+    background: url('../img/bridge.jpg') center no-repeat #333;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -299,8 +316,10 @@ textarea {
   /* Features */
 
     .features {
-      background: url('../img/gathering.jpg');
+      background: url('../img/gathering.jpg') center no-repeat #333;
+      background-size: cover;
       display: flex;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
     }
