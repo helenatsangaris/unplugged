@@ -623,6 +623,10 @@ textarea {
     width: 40%;
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -693,6 +697,10 @@ textarea {
   }
 
   /* -------------- Desktop Styles - About page -------------- */
+
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
