@@ -105,10 +105,10 @@ textarea {
   }
   
   body {
+    color: #e2e3ed;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
-    color: #e2e3ed;
   }
   
   ul, 
@@ -123,13 +123,13 @@ textarea {
   
   h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.25em;
   }
 
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
+    margin: 0;
   }
   
   h3, 
@@ -166,11 +166,11 @@ textarea {
 
    header,
    footer {
+     align-items: center;
      background-color: #202322;
      display: flex;
-     justify-content: center;
-     align-items: center;
      flex-flow: row wrap;
+     justify-content: center;
    }
 
    header {
@@ -178,20 +178,20 @@ textarea {
    }
 
    header .content-wrapper {
-     display: flex;
-     justify-content: center;
      align-items: center;
+     display: flex;
      flex-flow: row wrap;
+     justify-content: center;
      margin: 0;
      width: 100%;
    }
 
    header figure {
-     width: 60%;
+     align-items: center;
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
-     align-items: center;
+     width: 60%;
    }
 
     .header-divider {
@@ -221,10 +221,7 @@ textarea {
 
     footer {
       flex-direction: column;
-    }
-
-    footer h4 {
-     text-align: center;
+      text-align: center;
     }
 
     footer p {
@@ -247,13 +244,13 @@ textarea {
     }
 
     footer .social-icons p {
+      align-items: center;
       background-color: #527158;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
       display: flex;
+      height: 40px;
       justify-content: center;
-      align-items: center;
+      width: 40px;
     }
     
     footer .social-icons p i {
@@ -266,7 +263,6 @@ textarea {
 
     footer address {
      font-size: 0.875em;
-     text-align: center;
     }
 
   /* -------------- Mobile Styles - Homepage -------------- */
@@ -277,6 +273,7 @@ textarea {
     background: url('../img/bridge.jpg') center no-repeat #333;
     background-size: cover;
     display: flex;
+    min-height: 500px;
     justify-content: center;
     flex-flow: row wrap;
   }
@@ -290,10 +287,10 @@ textarea {
   /* Aside */
 
    aside {
+     align-items: center;
      background-color: #527158;
      display: flex;
      justify-content: center;
-     align-items: center;
    }
 
    aside .content-wrapper {
@@ -307,35 +304,35 @@ textarea {
 
   input[type=text] {
     box-sizing: border-box;
-    width: 100%;
     color: #9d9ea4;
     font-style: italic;
     padding: 20px 0 20px 15px;
+    width: 100%;
   }
 
   input[type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
     background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
     border: none;
+    color: #e2e3ed;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
   }
 
   /* Features */
 
     .features {
+      align-items: center;
       background: url('../img/gathering.jpg') center no-repeat #333;
       background-size: cover;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      align-items: center;
     }
 
     .features h2 {
@@ -348,14 +345,10 @@ textarea {
     }
 
     .features .features-items {
-      display: flex;
-      justify-content: center;
       align-items: center;
+      display: flex;
       flex-flow: row wrap;
-    }
-
-    .features p {
-      margin: 0;
+      justify-content: center;
     }
 
     .features i {
@@ -363,13 +356,18 @@ textarea {
       margin-bottom: 40px;
     }
 
+    .features p {
+      margin: 0;
+      text-align: center;
+    }
+
   /* Reviews */
 
    .reviews {
      background-color: #2a423a;
      display: flex;
-     justify-content: center;
      flex-flow: row wrap;
+     justify-content: center;
    }
 
    .reviews h2 {
@@ -385,11 +383,11 @@ textarea {
   /* -------------------- About Page -------------------- */
 
   .mission {
+    align-items: center;
     background-color: #527158;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    justify-content: center;
   }
 
   .mission-content p {
@@ -397,55 +395,50 @@ textarea {
   }
 
   .map figure {
-    position: relative;
     height: 0;
-    width: 100%;
-    padding-bottom: 80%;
     overflow: hidden;
+    padding-bottom: 80%;
+    position: relative;
+    width: 100%;
   }
 
   .map iframe {
-    position: absolute;
-    width: 100%;
     height: 100%;
-    top: 0;
     left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 
   .contact-section {
+    align-items: center;
     background-color: #2a423a;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    justify-content: center;
   }
-
-  .contact-section h2 {
-    margin: 0;
-  }
-
-  /* may need to change address for p in contact-section */
 
   /* -------------------- FAQ Page -------------------- */
 
   .faq {
+    align-items: center;
     background-color: #527158;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    justify-content: center;
   }
 
   .faq .content-wrapper {
-    margin: 50px 0 0 0;
-    display: flex;
     align-items: flex-start;
-    justify-content: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0 0 0;
   }
 
   .faq h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
 
   .faq-content {
@@ -549,6 +542,16 @@ textarea {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /* -------------- Base Header - Footer Styles -------------- */
   
   header {
@@ -556,8 +559,12 @@ textarea {
   }
 
   header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   .header-divider {
@@ -577,20 +584,40 @@ textarea {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
+    align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
 
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
   /* -------------- Tablet Styles - Homepage -------------- */
 
   /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
 
@@ -601,18 +628,22 @@ textarea {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 35%;
     margin: 0;
+    width: 35%;
   }
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    display: flex;
     flex-basis: 50%;
+    flex-flow: column wrap;
+    justify-content: center;
   }
 
   .features .features-item-description {
@@ -626,8 +657,18 @@ textarea {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 90%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* -------------- Tablet Styles - About page -------------- */
@@ -656,6 +697,10 @@ textarea {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* -------------- Tablet Styles - FAQ page -------------- */
 
   .faq .content-wrapper {
@@ -669,6 +714,12 @@ textarea {
   .faq-content {
     flex-basis: 40%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -678,6 +729,20 @@ textarea {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   /* -------------- Base Header - Footer Styles -------------- */
 
   /* -------------- Desktop Styles - Homepage -------------- */
@@ -685,6 +750,7 @@ textarea {
   /* Hero Area */
 
   .hero-area h1 {
+    font-size: 3.75em;
     width: 60%;
   }
 
@@ -697,6 +763,10 @@ textarea {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -724,16 +794,32 @@ textarea {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .contact .content-wrapper h2 {
     margin-bottom: 40px;
   }
 
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
   /* -------------- Desktop Styles - FAQ page -------------- */
 
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+
   .faq-content {
-    flex-basis: 45%;
+    flex-basis: 35%;
+  }
+    
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
